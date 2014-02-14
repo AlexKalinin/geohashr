@@ -6,7 +6,7 @@ if ENV['CI']
   Coveralls.wear!
 else
   require 'simplecov'
-  SimpleCov.start 'Gem'
+  SimpleCov.start
 end
 
 require 'minitest'
