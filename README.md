@@ -1,6 +1,7 @@
 # Geohashr
 [![Version][Version image]][Version]
 [![Build][Build image]][Build]
+[![Coverage][Coverage image]][Coverage]
 
 Geohash is a latitude/longitude geocoding system. It is a hierarchical
 spatial data structure which subdivides space into buckets of grid shape.
