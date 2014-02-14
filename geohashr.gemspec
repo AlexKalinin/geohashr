@@ -1,24 +1,24 @@
 # -*- encoding: utf-8 -*-
-# stub: geohashr 0.borked.20140214075417 ruby lib
+# stub: geohashr 0.1.0.20140214080544 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "geohashr"
-  s.version = "0.borked.20140214075417"
+  s.version = "0.1.0.20140214080544"
 
-  s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["JohnnyT"]
   s.date = "2014-02-14"
-  s.description = ""
+  s.description = "GeoHash - encode, decode, neighbors"
   s.email = ["ubergeek3141@gmail.com"]
-  s.extra_rdoc_files = ["CHANGELOG.md", "CONTRIBUTING.md", "LICENSE.md", "Manifest.txt", "README.md"]
-  s.files = [".coveralls.yml", ".gemtest", ".gitignore", ".travis.yml", "CHANGELOG.md", "CONTRIBUTING.md", "Gemfile.ci", "LICENSE.md", "Manifest.txt", "README.md", "Rakefile", "lib/mem_model.rb", "lib/mem_model/base.rb", "lib/mem_model/concern.rb", "lib/mem_model/errors.rb", "lib/mem_model/guid.rb", "lib/mem_model/model_name.rb", "lib/mem_model/validations.rb", "lib/mem_model/version.rb", "mem_model.gemspec", "test/helper.rb", "test/mem_model/test_active_model.rb", "test/mem_model/test_base.rb", "test/mem_model/test_guid.rb", "test/mem_model/test_rooted_base.rb", "test/mem_model/test_validations.rb", "test/mem_model/test_version.rb", "test/support/active_model_lint.rb", "test/test_geohashr.rb"]
-  s.homepage = "[![Version][Version image]][Version]"
+  s.extra_rdoc_files = ["CHANGELOG.md", "CONTRIBUTING.md", "LICENSE.txt", "Manifest.txt", "README.md"]
+  s.files = [".coveralls.yml", ".gemtest", ".gitignore", ".travis.yml", "CHANGELOG.md", "CONTRIBUTING.md", "LICENSE.txt", "Manifest.txt", "README.md", "Rakefile", "geohashr.gemspec", "lib/geohashr.rb", "lib/geohashr/constants.rb", "lib/geohashr/geohash.rb", "lib/geohashr/version.rb", "test/helper.rb", "test/test_geohashr.rb"]
+  s.homepage = "https://github.com/johnnyt/geohashr"
   s.licenses = ["MIT"]
   s.rdoc_options = ["--main", "README.md"]
   s.rubyforge_project = "geohashr"
   s.rubygems_version = "2.2.1"
-  s.summary = ""
+  s.summary = "GeoHash - encode, decode, neighbors"
   s.test_files = ["test/test_geohashr.rb"]
 
   if s.respond_to? :specification_version then
