@@ -15,12 +15,13 @@ Hoe.plugin :gemspec
 Hoe.spec 'geohashr' do
   developer     'JohnnyT', 'ubergeek3141@gmail.com'
   license       'MIT'
-  summary       = 'GeoHash - encode, decode, neighbors'
-  description   = 'GeoHash - encode, decode, neighbors'
-  urls          = ['https://github.com/johnnyt/geohashr']
-  history_file  = 'CHANGELOG.md'
-  readme_file   = 'README.md'
-  testlib       = :minitest
+
+  self.summary       = 'GeoHash - encode, decode, neighbors'
+  self.description   = 'GeoHash - encode, decode, neighbors'
+  self.urls          = ['https://github.com/johnnyt/geohashr']
+  self.history_file  = 'CHANGELOG.md'
+  self.readme_file   = 'README.md'
+  self.testlib       = :minitest
 
   dependency 'minitest',  '~> 5.2', :development
   dependency 'coveralls', '~> 1.0', :development

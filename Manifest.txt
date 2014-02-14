@@ -1,0 +1,16 @@
+.coveralls.yml
+.gitignore
+.travis.yml
+CHANGELOG.md
+CONTRIBUTING.md
+LICENSE.txt
+Manifest.txt
+README.md
+Rakefile
+geohashr.gemspec
+lib/geohashr.rb
+lib/geohashr/constants.rb
+lib/geohashr/geohash.rb
+lib/geohashr/version.rb
+test/helper.rb
+test/test_geohashr.rb
