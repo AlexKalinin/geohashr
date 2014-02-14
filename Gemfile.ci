@@ -1,0 +1,6 @@
+source 'http://rubygems.org'
+
+gem 'rake'
+gem 'hoe'
+gem 'minitest'
+gem 'coveralls',      :require => false
