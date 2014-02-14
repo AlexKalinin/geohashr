@@ -39,12 +39,12 @@ task :commit do
   puts "== Adding #{files}"
   `git add #{files}`
   puts '== Creating commit'
-  `git commit -m ':checkered_flag: Release #{MemModel::VERSION}'`
+  `git commit -m ':checkered_flag: Release #{Geohashr::VERSION}'`
   puts '== Pushing master to origin'
   `git push origin master`
   puts '== Running rake git:tag'
   Rake::Task['git:tag'].invoke
-  puts "Now run\n\nrake gem && gem push pkg/geohashr-#{MemModel::VERSION}.gem\n"
+  puts "Now run\n\nrake gem && gem push pkg/geohashr-#{Geohashr::VERSION}.gem\n"
 end
 
 desc 'Prepend new changes to CHANGELOG'
@@ -53,7 +53,7 @@ task :changelog do
 
   changes_io = StringIO.new
   $stdout = changes_io
-  ENV['VERSION'] = MemModel::VERSION
+  ENV['VERSION'] = Geohashr::VERSION
   Rake::Task['git:changelog'].invoke
   $stdout = STDOUT
   changes = changes_io.string.gsub('===', '###')
