@@ -24,8 +24,8 @@ module GeoHashr
           is_lng ^= 1
         end
       end
-      @x = positions.first.to_i(2)
-      @y = positions.last.to_i(2)
+      @x = positions.last.to_i(2)
+      @y = positions.first.to_i(2)
       @box = box.transpose
     end
 

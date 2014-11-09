@@ -16,6 +16,49 @@ class TestGeohashr < Minitest::Test
     end
   end
 
+  # bcfguvyz   prxz
+  # 89destwx   nqwy
+  # 2367kmqr   jmtv
+  # 0145hjnp   hksu
+  #            57eg
+  #            46df
+  #            139c
+  #            028b
+
+  def test_x_y
+    {
+      '0' => [0,0],
+      '1' => [1,0],
+      '2' => [0,1],
+      'x' => [7,2],
+      'y' => [6,3],
+      'z' => [7,3],
+
+      '00' => [0,0],
+      '01' => [0,1],
+      '02' => [1,0],
+      '0x' => [2,7],
+      '0y' => [3,6],
+      '0z' => [3,7],
+
+      'zz' => [31,31],
+      'zzz' => [255, 127],
+      'zzzz' => [1023,1023],
+      'zzzzz' => [8191,4095],
+      'zzzzzz' => [32767,32767],
+      'zzzzzzz' => [262143,131071],
+      'zzzzzzzz' => [1048575,1048575],
+      'zzzzzzzzz' => [8388607,4194303],
+      'zzzzzzzzzz' => [33554431,33554431],
+      'zzzzzzzzzzz' => [268435455,134217727],
+      'zzzzzzzzzzzz' => [1073741823,1073741823]
+
+    }.each do |hash, coord|
+      gh = GeoHashr::GeoHash.new(hash)
+      assert_equal [gh.x, gh.y], coord
+    end
+  end
+
   #def test_encode
   #  {
   #    [ 45.37,      -121.7      ] => 'c216ne',
